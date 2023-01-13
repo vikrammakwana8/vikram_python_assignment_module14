@@ -125,4 +125,182 @@ tpl_1=(10,20,30,40,20)
 print(tpl_1[::-1])
 
 
+(19) W.A.P to access the value between index 1st to 5th from the tuple.
+tpl_1=(10,20,30,40,50,80)
+print(tpl_1[1:5:])
 
+
+(20)W.A.P to access the alternate value between index 1st to 5th.
+tpl_1=(10,20,30,40,50,80)
+print(tpl_1[1:5:2])
+
+
+(21) W.A.P to create the dictionary of having 6 key and value pair.
+dict={}
+dict["key1"]="value1"
+dict["key2"]="value2"
+dict["key3"]="value3"
+dict["key4"]="value4"
+dict["key5"]="value5"
+dict["key6"]="value6"
+print(dict)
+
+
+
+(22) W.A.P to access the value using the key from dictionary.
+dict={'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4', 'key5': 'value5', 'key6': 'value6'}
+print(dict["key1"])
+
+
+(23)W.A.P to update the value on particular key.
+dict={'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4', 'key5': 'value5', 'key6': 'value6'}
+dict["key3"]="updated_value3"
+print(dict)
+
+
+(24) W.A.P to separate the key and value from dictionary using keys() and values() of dictionary
+dict={'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4', 'key5': 'value5', 'key6': 'value6'}
+
+print(dict.keys())
+print(dict.values())
+
+
+(25)W.A.P to convert the two list into one dictionary using for loop.
+list1 = [1,2,3,4]
+list2 = ["value_1","value_2","value_3","value_4"]
+
+res = {}
+
+for key in list1:
+   for value in list2:
+      dictionary[key] = value
+      
+      break
+print(dictionary)
+
+
+(26)W.A.P to convert the list using zip() of dictionary.
+list1 = [3, 6, 5]
+list2 = ["hi", "hello", "good morning"]
+
+dictionary = dict(zip(list1, list2))
+print(dictionary)
+
+
+
+(27) W.A.P to count the character repeat in string.
+str = "Write a Python program to count the occurrences of each word in a given sentence.Write a Python program to count the occurrences of each word in a given sentence."
+count = dict()
+dictionary = str.split(" ")
+for word in dictionary:
+	if word in count:
+		count[word] += 1
+	else:
+		count[word] = 1
+print(count)
+
+
+
+(28)W.A.P to print the String using the function.
+def fun(string):
+    print(string)
+
+
+fun("good morning")
+
+
+(29)W.A.P to create the parameterized function.
+def add(a,b):
+  print(a+b)
+
+add(15,12)
+
+
+(30)W.A.P to print multiple string using function.
+def mul_srt(a,b,c):
+  print(a,b,c)
+
+mul_srt("good morning","python","assignment")
+
+
+(31)W.A.P to create calculator using function.
+def add(a, b):    
+     
+   return a + b   
+def subtract(a, b):   
+     
+   return a - b   
+def multiply(a, b):   
+
+   return a * b   
+def divide(a, b):   
+     
+   return a / b    
+  
+print ("Please select the operation.")    
+print ("1. Add")    
+print ("2. Subtract")    
+print ("3. Multiply")    
+print ("4. Divide")    
+    
+choice = input("Please enter choice (add/ sub/ mul/ div): ")    
+    
+num_1 = int (input ("Please enter the first number: "))    
+num_2 = int (input ("Please enter the second number: "))    
+    
+if choice == "add":    
+   print (num_1, " + ", num_2, " = ", add(num_1, num_2))    
+    
+elif choice == "sub":    
+   print (num_1, " - ", num_2, " = ", subtract(num_1, num_2))    
+    
+elif choice == "mul":    
+   print (num_1, " * ", num_2, " = ", multiply(num_1, num_2))    
+elif choice == "div":    
+   print (num_1, " / ", num_2, " = ", divide(num_1, num_2))    
+else:    
+   print ("This is an invalid input")  
+   
+   
+   
+(32)W.A.P to create lamba function using one expression.
+(lambda name : print("Hey there,", name))("hello")
+
+
+(33)W.A.P to create lamba function using two expression.
+(lambda x,y : x  if (x>y) else("y id bigger then x"))(4,6)
+
+
+(34)W.A.P to create lamba function using three expression.
+
+(lambda x,y,z: x+y+z)(5,2,7)
+
+
+(35)W.A.P to create a return type function using lamda function.
+string="good morning"
+(lambda string: string.upper()[::-1])(string)
+
+
+
+
+(36) W.A.P to import another module into one module. 
+import random
+list=[10,20,30,50,40,60]
+num_1=random.choice(list)
+print("first number is",num_1)
+num_2=random.choice(list)
+print("second number id",num_2)
+
+
+import math
+addition=num_1+num_2
+print("addition of two number is",addition) 
+
+
+(37)W.A.P to use all the Math module function.
+import math
+print(math.ceil(10.32))
+
+print(math.sqrt(10.98))
+print(math.pi)
+print(math.gamma(5))
